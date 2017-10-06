@@ -92,10 +92,6 @@
                                 </label>
                                 <searchBar contentMode="redraw" placeholder="place holder stuff" translatesAutoresizingMaskIntoConstraints="NO" id="bWZ-Kq-hsd">
                                     <rect key="frame" x="8" y="0.0" width="138" height="44"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="44" id="NIW-iJ-7c0"/>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vfI-uP-GsZ"/>
-                                    </constraints>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtP-bV-l3Z">

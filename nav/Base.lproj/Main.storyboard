@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -84,14 +85,14 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRG-za-7hU">
-                                    <rect key="frame" x="8" y="0.0" width="138" height="44"/>
+                                    <rect key="frame" x="8" y="4" width="138" height="36"/>
                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <searchBar contentMode="redraw" placeholder="place holder stuff" translatesAutoresizingMaskIntoConstraints="NO" id="bWZ-Kq-hsd">
-                                    <rect key="frame" x="8" y="0.0" width="138" height="44"/>
+                                    <rect key="frame" x="8" y="4" width="138" height="36"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtP-bV-l3Z">
@@ -101,10 +102,10 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="bWZ-Kq-hsd" firstAttribute="top" secondItem="vy6-Wd-FHP" secondAttribute="top" id="9IK-kk-L2W"/>
+                                <constraint firstItem="bWZ-Kq-hsd" firstAttribute="top" secondItem="vy6-Wd-FHP" secondAttribute="top" constant="4" id="9IK-kk-L2W"/>
                                 <constraint firstAttribute="trailing" secondItem="jtP-bV-l3Z" secondAttribute="trailing" id="QEY-Dr-eTB"/>
                                 <constraint firstItem="WRG-za-7hU" firstAttribute="top" secondItem="bWZ-Kq-hsd" secondAttribute="top" id="QUb-Qr-QgQ"/>
-                                <constraint firstAttribute="bottom" secondItem="bWZ-Kq-hsd" secondAttribute="bottom" id="Xc9-5e-ess"/>
+                                <constraint firstAttribute="bottom" secondItem="bWZ-Kq-hsd" secondAttribute="bottom" constant="4" id="Xc9-5e-ess"/>
                                 <constraint firstItem="WRG-za-7hU" firstAttribute="bottom" secondItem="bWZ-Kq-hsd" secondAttribute="bottom" id="aLD-BQ-ag8"/>
                                 <constraint firstItem="WRG-za-7hU" firstAttribute="trailing" secondItem="bWZ-Kq-hsd" secondAttribute="trailing" id="acn-ml-gOE"/>
                                 <constraint firstItem="jtP-bV-l3Z" firstAttribute="leading" secondItem="bWZ-Kq-hsd" secondAttribute="trailing" constant="8" id="gYN-2R-FQI"/>

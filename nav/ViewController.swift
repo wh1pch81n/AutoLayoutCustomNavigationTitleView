@@ -9,17 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    var searchBar: UISearchBar = MySearchBar()
+    var braces: UILabel = UILabel()
+    var customView: UIView = UIView()
+    
+    override func loadView() {
+        super.loadView()
+        
+        customView.addSubview(searchBar)
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        customView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[searchBar]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["searchBar": searchBar]))
+        customView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[searchBar]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["searchBar": searchBar]))
+        
+        searchBar.setContentHuggingPriority(UILayoutPriority(rawValue: 250), for: UILayoutConstraintAxis.horizontal)
+        searchBar.setContentHuggingPriority(UILayoutPriority(rawValue: 250), for: UILayoutConstraintAxis.vertical)
+        
+        //
+        navigationItem.titleView = customView
+        
+        let leftBar = UIBarButtonItem(title: "item", style: UIBarButtonItemStyle.done, target: nil, action: nil)
+        navigationItem.leftBarButtonItem = leftBar
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+class MySearchBar: UISearchBar {
+    
+    override var intrinsicContentSize: CGSize {
+        return UILayoutFittingExpandedSize
     }
-
-
+    
 }
 
